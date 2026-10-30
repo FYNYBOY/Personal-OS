@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FairuzOS</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+  <div id="top" class="topbar">
+    <p id="welcomeopen" class="topbar-pill os-name">FairuzOS</p>
+    <p class="topbar-pill">✨ Almost Linux ✨</p>
+    <p id="timeElement" class="topbar-pill">Time</p>
+  </div>
+
+  <div id="desktopApps">
+    <div class="icon" id="notesIcon">
+      <div class="icon-img">📓</div>
+      <p>Notes</p>
+    </div>
+    <div class="icon" id="filesIcon">
+      <div class="icon-img">📁</div>
+      <p>Files</p>
+    </div>
+  </div>
+
+  <div class="window" id="welcome" style="top: calc(50% - 150px); left: calc(50% - 200px);">
+    <div class="windowheader" id="welcomeheader">
+      <div class="closebutton" id="welcomeclose"></div>
+      <p class="headertext">Welcome</p>
+      <div class="header-spacer"></div>
+    </div>
+    <div class="window-body" style="width: 360px;">
+      <h1>Welcome to my OS</h1>
+      <h2>Hi, I'm Fairuz N!</h2>
+      <p>
+        I like building things and testing out new ideas!
+        <dfn>unmistakably</dfn> you.
+      </p>
+      <p>
+        Favorite things to do: <s>homework</s> building websites<br />
+        Currently into: <abbr title="your favorite hobby here">MARVEL RIVALS!!</abbr>
+      </p>
+      <p><a href="https://github.com/FYNYBOY" target="_blank">My GitHub</a></p>
+    </div>
+  </div>
+
+  <div class="window" id="notes" style="top: calc(50% - 220px); left: calc(50% - 280px); display: none;">
+    <div class="windowheader" id="notesheader">
+      <div class="closebutton" id="notesclose"></div>
+      <p class="headertext">Notes</p>
+      <div class="header-spacer"></div>
+    </div>
+    <div class="window-body notes-body">
+      <div id="sidebar"></div>
+      <div id="noteContent"></div>
+    </div>
+  </div>
+
+  <div class="window" id="files" style="top: calc(50% - 200px); left: calc(50% - 300px); display: none;">
+    <div class="windowheader" id="filesheader">
+      <div class="closebutton" id="filesclose"></div>
+      <p class="headertext">Files</p>
+      <div class="header-spacer"></div>
+    </div>
+    <div class="window-body files-body">
+      <div class="files-toolbar">
+        <button id="filesUp">⬆ Up</button>
+        <span id="filesPath"></span>
+      </div>
+      <div class="files-main">
+        <div id="filesList"></div>
+        <pre id="filePreview">Select a file to read it.</pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
